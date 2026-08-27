@@ -1,0 +1,11 @@
+artificial intelligence, and more.
+It was created by Guido van Rossum in 1991 and
+has grown into one of the most popular programming languages in the world.
+Key Features of Python
+making it beginner-friendly.
+Interpreted language - You don’t need to compile Python;
+you can run your code directly.
+Cross-platform - Works on Windows, macOS, Linux, and many other systems.
+Extensive libraries - Python has built-in modules and
+third-party packages (via PyPI) for tasks like math,
+Versatile use cases - From small scripts to large-scale applications.
