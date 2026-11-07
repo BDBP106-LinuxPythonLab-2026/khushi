@@ -1,0 +1,28 @@
+# (7) Use the decorator measure_time to calculate how long the above function calculating
+# population growth that loops 1 million iterations.
+
+
+import time
+import math
+
+def measure_time(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args, **kwargs)
+        end = time.time()
+        print("Execution time:", end - start, "seconds")
+        return result
+    return wrapper
+
+@measure_time
+def population_growth(initial, rate, time):
+    def exponential_growth():
+        population = initial
+        for i in range(1000000):
+            population = initial * math.exp(rate * time)
+        return population
+
+    population = exponential_growth()
+    print("Population after time:", round(population))
+
+population_growth(1000, 0.05, 10)
